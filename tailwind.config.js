@@ -5,8 +5,11 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      gradientColorStopPositions: {
+        33: '33%',
+    },
   },
   plugins: [],
 }
-
+}

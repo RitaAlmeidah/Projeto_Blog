@@ -1,9 +1,8 @@
 import React from 'react';
-import { FacebookLogo, InstagramLogo, LinkedinLogo } from '@phosphor-icons/react';
+import { FacebookLogo, GithubLogo, InstagramLogo, LinkedinLogo } from '@phosphor-icons/react';
 
 function Footer() {
  
-  
 
   return (
     <>
@@ -12,9 +11,8 @@ function Footer() {
             <p className='text-xl font-bold'>Blog pessoal Rita Almeida | Copyright: </p>
             <p className='text-lg'>Acesse minhas redes sociais</p>
             <div className='flex gap-2'>
-              <LinkedinLogo size={48} weight='bold' />
-              <InstagramLogo size={48} weight='bold' />
-              <FacebookLogo size={48} weight='bold' />
+              <LinkedinLogo className='bg-gradient-to-r from-indigo-500 to-purple-500 via-cyan-500 to-blue-500' size={48} weight='bold' />
+              <GithubLogo className='bg-gradient-to-r from-indigo-500 to-purple-500 via-cyan-500 to-blue-500' size={48} weight='bold' />
             </div>
           </div>
         </div>

@@ -1,0 +1,11 @@
+.fundoCadastro {
+    background-image: url(../../assets/cadastroAnimado.svg);
+      background-repeat: no-repeat;
+      width: 100%;
+      min-height: 100vh;
+      background-size: center;
+      background-position: center;
+
+
+
+  }
