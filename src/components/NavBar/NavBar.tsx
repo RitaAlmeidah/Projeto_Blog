@@ -21,28 +21,33 @@ function Navbar() {
     <>
      <div className='w-full bg-violet-900 text-white flex justify-center py-4'>
           <div className="container flex justify-between text-lg">
-            <div className='text-2xl font-bold uppercase m-4'>Blog Pessoal</div>
+          <Link to='/home' className='text-2xl font-bold uppercase m-4'>Blog Pessoal</Link>
 
             <div className='flex gap-4'>
               <button className='rounded-tl-full text-white bg-violet-900 hover:bg-violet-500 w-0/0 py-2'>
               <Link to='/login' className='hover:underline m-4'>Login</Link>
               </button>
+
               <button className='rounded-tl-full text-white bg-violet-900 hover:bg-violet-500 w-0/0 py-2'>
               <Link to='/home' className='hover:underline m-4'>Home</Link>
               </button>
+
               <button className='rounded-tl-full text-white bg-violet-900 hover:bg-violet-500 w-0/0 py-2'>
               <div className='hover:underline m-4'>Postagens</div>
               </button>
+
               <button className='rounded-tl-full text-white bg-violet-900 hover:bg-violet-500 w-0/0 py-2'>
-              <div className='hover:underline m-4'>Temas</div>
+              <Link to='/temas' className='hover:underline m-4'>Temas</Link>
               </button>
+
               <button className='rounded-tl-full text-white bg-violet-900 hover:bg-violet-500 w-0/0 py-2'>
-              <div className='hover:underline m-4'>Cadastrar tema</div>
-              <Link to='/temas' className='hover:underline'></Link>
+              <Link to='/cadastroTema' className='hover:underline m-4'>Cadastrar tema</Link>
               </button>
+
               <button className='rounded-tl-full text-white bg-violet-900 hover:bg-violet-500 w-0/0 py-2'>
               <div className='hover:underline m-4'>Perfil</div>
               </button>
+
               <button className='rounded-tl-full text-white bg-violet-900 hover:bg-violet-500 w-0/0 py-2'>
               <div className='hover:underline m-4'>Sair</div>
               <Link to='' onClick={logout} className='hover:underline'></Link>
