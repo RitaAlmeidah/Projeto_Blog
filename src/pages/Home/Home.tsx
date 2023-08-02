@@ -1,29 +1,8 @@
-import React, { useContext } from 'react';
-import { UserContext } from '../../contexts/UserContext';
-import { Link, useNavigate } from 'react-router-dom';
+import React from 'react';
 import homeLogo from '../../assets/hello.svg';
-
-/*function Home() {
-  const { nome, setNome } = useContext(UserContext);
-
-  return (
-    <div className='flex justify-center items-center'>
-      <div>
-        <h2 className="text-slate-900 text-5xl  my-4">Logar</h2>
-        <h2 className="text-slate-900 text-4xl ">Ola user : {nome}</h2>
-        <Link to="/login" className="my-4 rounded bg-indigo-400
-         hover:bg-indigo-900 text-white w-1/2 py-2 flex justify-center">
-          Voltar 
-        </Link>
-      </div>
-
-    </div>
-  );
-}
-
-export default Home;*/
-
-
+import './Home.css';
+import ListaPostagens from '../../components/postagens/listaPostagens/ListaPostagens';
+import ModalPostagem from '../../components/postagens/modalPostagem/ModalPostagem';
 
 //Construindo o NavBar
 function Home() {
@@ -36,8 +15,8 @@ function Home() {
             <p className='text-xl'>Expresse aqui seus pensamentos e opniões</p>
 
             <div className="flex justify-around gap-4">
-            
-              <button className='rounded bg-white text-blue-800 py-2 px-4'>Ver postagens</button>
+              <ModalPostagem />
+                <button className='rounded bg-gradient-to-r from-green-500 to-blue-600 hover:from-pink-500 hover:to-yellow-500 Hover me py-2 px-4'>Ver postagens</button>
             </div>
           </div>
 
@@ -47,214 +26,9 @@ function Home() {
           </div>
         </div>
       </div>
-    
+      <ListaPostagens />
     </>
   );
 }
 
 export default Home;
-
-
-//Criando Rotas com o React Router Dom
-/*const Home = () => {
-  let navigate = useNavigate()
-  return (
-
-      <div>
-          <h2 className="text-slate-900 text-5xl  m-4">Home</h2>
-          <div>
-              <button type='submit'
-                  className='hover:underline mx-4'
-                  onClick={() => { navigate('/login') }}>
-                  Login useNavigate
-              </button>
-              <Link to='/login' className='hover:underline mx-4'>Login por Link</Link>
-          </div>
-
-      </div>
-
-  )
-}
-
-export default Home*/
-
-
-//Codificando Grid no Tailwind CSS em React
-/*function Home() {
-  return (
-      <>
-
-          <div>
-              <div className='grid grid-cols-12 gap-2 m-4'>
-
-                  <div className='col-span-6 bg-green-300'>
-                      container 1
-                  </div>
-
-                  <div className='col-span-6 bg-yellow-200'>
-                      container 2
-                  </div>
-
-              </div>
-              <div className='grid grid-cols-12 gap-2 m-4'>
-
-                  <div className='col-span-8 bg-green-300'>
-                      container 1
-                  </div>
-
-                  <div className='col-span-4 bg-yellow-200'>
-                      container 2
-                  </div>
-
-              </div>
-
-              <div className='grid grid-cols-12 gap-2 m-4'>
-
-                  <div className='col-span-4 bg-green-300'>
-                      container 1
-                  </div>
-
-                  <div className='col-span-4 bg-yellow-200'>
-                      container 2
-                  </div>
-
-                  <div className='col-span-4 bg-red-500'>
-                      container 3
-                  </div>
-
-              </div>
-
-              <div className='grid grid-cols-12 gap-2 m-4'>
-
-                  <div className='col-span-3 bg-green-300'>
-                      container 1
-                  </div>
-
-                  <div className='col-span-3 bg-yellow-200'>
-                      container 2
-                  </div>
-
-                  <div className='col-span-3 bg-red-500'>
-                      container 3
-                  </div>
-
-                  <div className='col-span-3 bg-blue-500'>
-                      container 4
-                  </div>
-
-              </div>
-
-              <div className='grid grid-cols-12 gap-2 m-4'>
-
-                  <div className='col-span-4 bg-green-300'>
-                      container 1
-                  </div>
-
-                  <div className='col-span-4 bg-yellow-200'>
-                      container 2
-                  </div>
-
-                  <div className='col-span-2 bg-red-500'>
-                      container 3
-                  </div>
-
-                  <div className='col-span-2 bg-blue-500'>
-                      container 4
-                  </div>
-
-              </div>
-
-          </div>
-
-
-
-      </>
-  );
-}
-
-export default Home;*/
-
-
-// Codificando Flex-Box no Tailwind CSS em React
-/*function Home() {
-  return (
-    <>
-      <div>
-
-        <h3 className='text-xl'>justify-content alinhamento horizontal</h3>
-        <h5>justify-start Esquerda</h5>
-
-        <div className="flex flex-row  justify-start m-3">
-          <div className='basis-1/4 bg-red-500'>01</div>
-          <div className='basis-1/4 bg-gray-400'>01</div>
-        </div>
-      </div>
-
-      <h5>justify-end Direita</h5>
-
-      <div className="flex flex-row  justify-end m-3">
-        <div className='basis-1/4 bg-red-500'>01</div>
-        <div className='basis-1/4 bg-gray-400'>01</div>
-      </div>
-
-      <h5>justify-center Centro</h5>
-
-      <div className="flex flex-row  justify-center m-3">
-        <div className='basis-1/4 bg-red-500'>01</div>
-        <div className='basis-1/4 bg-gray-400'>01</div>
-      </div>
-
-      <h5>justify-around estremidades</h5>
-
-      <div className="flex flex-row  justify-between m-3">
-        <div className='basis-1/4 bg-red-500'>01</div>
-        <div className='basis-1/4 bg-gray-400'>01</div>
-      </div>
-
-      <h5>justify-around estremidades com espaçamento</h5>
-
-      <div className="flex flex-row  justify-around m-3">
-        <div className='basis-1/4 bg-red-500'>01</div>
-        <div className='basis-1/4 bg-gray-400'>01</div>
-      </div>
-
-      <div className='mt-12'>
-
-        <h3 className='text-xl'>justify-content alinhamento vertical</h3>
-        <div className='w-auto h-60 bg-gray-400 flex  justify-center items-start m-3'>
-          <div className='basis-1/4 bg-red-500'>justify-center items-start alinhamento horizontal centro/vertical topo</div>
-        </div>
-
-        <div className='w-auto h-60 bg-gray-400 flex  justify-center items-center m-3'>
-          <div className='basis-1/4 bg-red-500'>justify-center items-start alinhamento horizontal centro/vertical centro</div>
-        </div>
-
-        <div className='w-auto h-60 bg-gray-400 flex  justify-center items-end m-3'>
-          <div className='basis-1/4 bg-red-500'>justify-center items-start alinhamento horizontal centro/vertical base</div>
-        </div>
-      </div>
-
-    </>
-  );
-}
-
-export default Home;*/
-
-
-/*function Home() {
-  
-  const [loggedIn, setLoggedIn] = useState(false);
-  return (
-    <>
-    <div className="border border-purple-800 bg-purple-800">
-      {loggedIn ? (
-        <h1>Bem-vindo de volta!</h1>
-      ) : (
-        <button onClick={() => setLoggedIn(true)} className="bg-purple-700 hover:bg-orange-400 text-white font-bold py-0 px-8 rounded outline">Entrar</button>
-      )}
-    </div>
-
-    </>
-  );
-}
-export default Home;*/
