@@ -1,8 +1,8 @@
 import React, { ChangeEvent, useContext, useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import { AuthContext } from '../../contexts/AuthContext'
-import Tema from '../../models/Tema';
-import { atualizar, buscar, cadastrar } from '../../services/Service';
+import { AuthContext } from '../../../contexts/AuthContext'
+import Tema from '../../../models/Tema';
+import { atualizar, buscar, cadastrar } from '../../../services/Service';
 
 function FormularioTema() {
   const [tema, setTema] = useState<Tema>({} as Tema);
@@ -115,7 +115,7 @@ function FormularioTema() {
            />
           </div>
           <button
-            className="rounded text-slate-100 bg-indigo-400 hover:bg-indigo-800 w-1/2 py-2 mx-auto block "
+            className="rounded text-slate-100 bg-gradient-to-r from-green-500 to-blue-600 hover:from-pink-500 hover:to-yellow-500 Hover meg-indigo-400 hover:bg-indigo-800 w-1/2 py-2 mx-auto block "
             type="submit"
           >
             {id === undefined ? 'Cadastrar' : 'Editar'}

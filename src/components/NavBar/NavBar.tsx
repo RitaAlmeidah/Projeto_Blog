@@ -19,7 +19,7 @@ function Navbar() {
 
   return (
     <>
-     <div className='w-full bg-violet-900 text-white flex justify-center py-4'>
+     <div className='w-full bg-violet-900 text-white flex justify-center py-1'>
           <div className="container flex justify-between text-lg">
           <Link to='/home' className='text-2xl font-bold uppercase m-4'>Blog Pessoal</Link>
 
@@ -33,7 +33,7 @@ function Navbar() {
               </button>
 
               <button className='rounded-tl-full text-white bg-violet-900 hover:bg-violet-500 w-0/0 py-2'>
-              <div className='hover:underline m-4'>Postagens</div>
+              <Link to='/postagens' className='hover:underline m-4'>Postagens</Link>
               </button>
 
               <button className='rounded-tl-full text-white bg-violet-900 hover:bg-violet-500 w-0/0 py-2'>
@@ -49,8 +49,7 @@ function Navbar() {
               </button>
 
               <button className='rounded-tl-full text-white bg-violet-900 hover:bg-violet-500 w-0/0 py-2'>
-              <div className='hover:underline m-4'>Sair</div>
-              <Link to='' onClick={logout} className='hover:underline'></Link>
+              <Link to='' onClick={logout} className='hover:underline m-4'>Sair</Link>
               </button>
               
             </div>

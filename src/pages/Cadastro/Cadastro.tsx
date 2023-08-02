@@ -72,8 +72,8 @@ function Cadastro() {
       <div className="grid grid-cols-1 lg:grid-cols-2 h-screen place-items-center font-bold bg-gradient-to-r from-indigo-500 to-purple-500 via-cyan-500 to-blue-500">
         <div className="fundoCadastro hidden lg:block"></div>
         <form className='flex justify-center items-center flex-col w-2/3 gap-3' onSubmit={cadastrarNovoUsuario}>
-          <h2 className='text-gradient-to-r from-indigo-500 to-purple-500 via-cyan-500 to-blue-500 text-5xl'>Cadastrar</h2>
-          <div className="flex flex-col w-full">
+          <h2 className='text-white text-5xl'>Cadastrar</h2>
+          <div className="flex flex-col w-full text-white">
             <label htmlFor="nome">Nome</label>
             <input
               type="text"
@@ -85,7 +85,7 @@ function Cadastro() {
               onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
             />
           </div>
-          <div className="flex flex-col w-full">
+          <div className="flex flex-col w-full text-white">
             <label htmlFor="usuario">Usuario</label>
             <input
               type="text"
@@ -97,7 +97,7 @@ function Cadastro() {
               onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
             />
           </div>
-          <div className="flex flex-col w-full">
+          <div className="flex flex-col w-full text-white">
             <label htmlFor="foto">Foto</label>
             <input
               type="text"
@@ -109,7 +109,7 @@ function Cadastro() {
               onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
             />
           </div>
-          <div className="flex flex-col w-full">
+          <div className="flex flex-col w-full text-white">
             <label htmlFor="senha">Senha</label>
             <input
               type="password"
@@ -121,7 +121,7 @@ function Cadastro() {
               onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
             />
           </div>
-          <div className="flex flex-col w-full">
+          <div className="flex flex-col w-full text-white">
             <label htmlFor="confirmarSenha">Confirmar Senha</label>
             <input
               type="password"
@@ -134,10 +134,10 @@ function Cadastro() {
             />
           </div>
           <div className="flex justify-around w-full gap-8">
-            <button className='rounded text-white bg-orange-600 hover:bg-orange-400 w-1/2 py-2' >
+            <button className='rounded text-white bg-gradient-to-r  from-pink-600 to-yellow-600 hover:from-pink-400 hover:to-yellow-400 Hover me w-1/2 py-2' >
               Cancelar
             </button>
-            <button className='rounded text-white bg-indigo-700 hover:bg-indigo-400 w-1/2 py-2' type='submit'>
+            <button className='rounded text-white bg-gradient-to-r  from-green-500 to-blue-600 hover:from-green-300 hover:to-blue-300 Hover me w-1/2 py-2' type='submit'>
               Cadastrar
             </button>
           </div>
@@ -148,80 +148,3 @@ function Cadastro() {
 }
 
 export default Cadastro
-
-
-/*function Cadastro() {
-
-
-  return (
-    <>
-      <div className="grid grid-cols-1 lg:grid-cols-2 h-screen place-items-center font-bold bg-gradient-to-r from-indigo-500 to-purple-500 via-cyan-500 to-blue-500">
-        <div className="fundoCadastro hidden lg:block"></div>
-        <form className='flex justify-center items-center flex-col w-2/3 gap-3' >
-          <h2 className='text-slate-900 text-5xl'>Cadastrar</h2>
-          <div className="flex flex-col w-full">
-            <label htmlFor="nome">Nome</label>
-            <input
-              type="text"
-              id="nome"
-              name="nome"
-              placeholder="Nome"
-              className="border-2 border-slate-700 rounded p-2"
-             
-            />
-          </div>
-          <div className="flex flex-col w-full">
-            <label htmlFor="usuario">Usuario</label>
-            <input
-              type="text"
-              id="usuario"
-              name="usuario"
-              placeholder="Usuario"
-              className="border-2 border-violet-900 rounded p-2"
-            />
-          </div>
-          <div className="flex flex-col w-full">
-            <label htmlFor="foto">Foto</label>
-            <input
-              type="text"
-              id="foto"
-              name="foto"
-              placeholder="Foto"
-              className="border-2 border-violet-900 rounded p-2"
-            />
-          </div>
-          <div className="flex flex-col w-full">
-            <label htmlFor="senha">Senha</label>
-            <input
-              type="password"
-              id="senha"
-              name="senha"
-              placeholder="Senha"
-              className="border-2 border-violet-900 rounded p-2"
-            />
-          </div>
-          <div className="flex flex-col w-full">
-            <label htmlFor="confirmarSenha">Confirmar Senha</label>
-            <input
-              type="password"
-              id="confirmarSenha"
-              name="confirmarSenha"
-              placeholder="Confirmar Senha"
-              className="border-2 border-violet-900 rounded p-2"
-            />
-          </div>
-          <div className="flex justify-around w-full gap-8">
-            <button className='rounded text-white bg-orange-600 hover:bg-orange-400 w-1/2 py-2' >
-              Cancelar
-            </button>
-            <button className='rounded text-white bg-indigo-700 hover:bg-indigo-400 w-1/2 py-2' type='submit'>
-              Cadastrar
-            </button>
-          </div>
-        </form>
-      </div>
-    </>
-  )
-}
-
-export default Cadastro*/
