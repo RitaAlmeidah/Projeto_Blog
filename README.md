@@ -1,5 +1,4 @@
 # Blog Pessoal
-* Front-end
 
 <img align="center" width="500" alt="home" src="https://github.com/RitaAlmeidah/Projeto_Blog/blob/ajustesFinais/src/assets/GifCadastro.gif?raw=true">
 <img align="center" width="500" alt="home" src="https://github.com/RitaAlmeidah/Projeto_Blog/blob/ajustesFinais/src/assets/GifNavegar.gif?raw=true">
