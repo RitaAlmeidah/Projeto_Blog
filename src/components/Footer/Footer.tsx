@@ -18,8 +18,12 @@ function Footer() {
             <p className='text-xl font-bold'>Blog pessoal Rita Almeida | Copyright: {data}</p>
             <p className='text-lg'>Acesse minhas redes sociais</p>
             <div className='flex gap-2'>
-              <LinkedinLogo className='bg-gradient-to-r from-indigo-500 to-purple-500 via-cyan-500 to-blue-500' size={48} weight='bold' />
-              <GithubLogo className='bg-gradient-to-r from-indigo-500 to-purple-500 via-cyan-500 to-blue-500' size={48} weight='bold' />
+              <a  href="https://www.linkedin.com/in/ritaa-almeida/">
+               <LinkedinLogo className='bg-gradient-to-r from-indigo-500 to-purple-500 via-cyan-500 to-blue-500' size={48} weight='bold'/>
+               </a>
+               <a href="https://github.com/RitaAlmeidah">
+              <GithubLogo className='bg-gradient-to-r from-indigo-500 to-purple-500 via-cyan-500 to-blue-500' size={48} weight='bold'/>
+              </a>
             </div>
           </div>
         </div>
