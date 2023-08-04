@@ -135,7 +135,7 @@ function Cadastro() {
             />
           </div>
           <div className="flex justify-around w-full gap-8">
-            <button className='rounded text-white bg-gradient-to-r  from-pink-600 to-yellow-600 hover:from-pink-400 hover:to-yellow-400 Hover me w-1/2 py-2' >
+            <button className='rounded text-white bg-gradient-to-r  from-pink-600 to-yellow-600 hover:from-pink-400 hover:to-yellow-400 Hover me w-1/2 py-2' onClick={back}>
               Cancelar
             </button>
             <button className='rounded text-white bg-gradient-to-r  from-green-500 to-blue-600 hover:from-green-300 hover:to-blue-300 Hover me w-1/2 py-2' type='submit'>
