@@ -3,6 +3,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { AuthContext } from '../../../contexts/AuthContext'
 import Tema from '../../../models/Tema';
 import { atualizar, buscar, cadastrar } from '../../../services/Service';
+import { toastAlerta } from '../../../util/toastAlerta';
 
 function FormularioTema() {
   const [tema, setTema] = useState<Tema>({} as Tema);
@@ -48,15 +49,15 @@ function FormularioTema() {
           }
         })
 
-        alert('Tema atualizado com sucesso')
+        toastAlerta('Tema atualizado com sucesso', 'sucesso')
         retornar()
 
       } catch (error: any) {
         if (error.toString().includes('403')) {
-          alert('O token expirou, favor logar novamente')
+          toastAlerta('O token expirou, favor logar novamente', 'info')
           handleLogout()
         } else {
-          alert('Erro ao atualizar o Tema')
+          toastAlerta('Erro ao atualizar o Tema', 'erro')
         }
 
       }
@@ -69,14 +70,14 @@ function FormularioTema() {
           }
         })
 
-        alert('Tema cadastrado com sucesso')
+        toastAlerta('Tema cadastrado com sucesso', 'sucesso')
 
       } catch (error: any) {
         if (error.toString().includes('403')) {
-          alert('O token expirou, favor logar novamente')
+          toastAlerta('O token expirou, favor logar novamente', 'info')
           handleLogout()
         } else {
-          alert('Erro ao cadastrado o Tema')
+          toastAlerta('Erro ao cadastrado o Tema', 'erro')
         }
       }
     }
@@ -90,7 +91,7 @@ function FormularioTema() {
 
   useEffect(() => {
     if (token === '') {
-      alert('Você precisa estar logado');
+      toastAlerta('Você precisa estar logado', 'info');
       navigate('/login');
     }
   }, [token]);
@@ -99,27 +100,27 @@ function FormularioTema() {
     <div className="grid grid-cols-1  h-screen place-items-center font-bold bg-gradient-to-r from-indigo-500 to-purple-500 via-cyan-500 to-blue-500">
       <div className=" container flex flex-col items-center justify-center mx-auto">
         <h1 className="text-4xl text-center my-8 text-white">
-         {id === undefined ? 'Cadastre um novo tema' : 'Editar tema'}
+          {id === undefined ? 'Cadastre um novo tema' : 'Editar tema'}
         </h1>
 
-       <form className="w-1/2 flex flex-col gap-4" onSubmit={gerarNovoTema}>
-         <div className="flex flex-col gap-2 border-slate-800 w-full text-indigo-900">
-           <label htmlFor="descricao">Descrição do tema</label>
-           <input
+        <form className="w-1/2 flex flex-col gap-4" onSubmit={gerarNovoTema}>
+          <div className="flex flex-col gap-2 border-slate-800 w-full text-indigo-900">
+            <label htmlFor="descricao">Descrição do tema</label>
+            <input
               type="text"
               placeholder="Descrição"
-             name='descricao'
-             className="border-2 border-slate-700 rounded p-2"
-             value={tema.descricao}
-             onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
-           />
+              name='descricao'
+              className="border-2 border-slate-700 rounded p-2"
+              value={tema.descricao}
+              onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
+            />
           </div>
           <button
             className="rounded text-slate-100 bg-gradient-to-r from-green-500 to-blue-600 hover:from-pink-500 hover:to-yellow-500 Hover meg-indigo-400 hover:bg-indigo-800 w-1/2 py-2 mx-auto block "
             type="submit"
           >
             {id === undefined ? 'Cadastrar' : 'Editar'}
-         </button>
+          </button>
         </form>
       </div>
     </div>

@@ -12,7 +12,7 @@ function task() {
     }
   }, [completada]);
 
-  function completo(){
+  function completo() {
     setCompletada(true)
   }
 
@@ -21,7 +21,7 @@ function task() {
       <h1>Tarefa</h1>
       <h3>{tarefa}</h3>
       <p>Conclua a tarefa</p>
-      <img src={homeTask} className='img' alt="Imagem tela tarefas" /> 
+      <img src={homeTask} className='img' alt="Imagem tela tarefas" />
       <button onClick={completo} className="bg-violet-700 hover:bg-orange-400 text-white font-bold py-0 px-6 rounded outline">Concluir Tarefa</button>
     </div>
   );

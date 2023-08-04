@@ -1,4 +1,4 @@
-import Postagem  from "./Postagem";
+import Postagem from "./Postagem";
 
 export default interface Usuario {
   id: number;

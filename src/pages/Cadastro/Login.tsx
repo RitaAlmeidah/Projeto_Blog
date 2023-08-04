@@ -2,7 +2,7 @@ import React from 'react';
 import './Login.css';
 
 function Login() {
-  
+
   return (
     <>
       <div className="grid grid-cols-1 lg:grid-cols-2 h-screen place-items-center font-bold ">
@@ -16,7 +16,7 @@ function Login() {
               name="usuario"
               placeholder="Usuario"
               className="border-2 border-slate-700 rounded p-2"
-            
+
             />
           </div>
           <div className="flex flex-col w-full">
@@ -27,10 +27,10 @@ function Login() {
               name="senha"
               placeholder="Senha"
               className="border-2 border-slate-700 rounded p-2"
-             
+
             />
           </div>
-          <button  type='submit' className="rounded bg-indigo-400 hover:bg-indigo-900 text-white w-1/2 py-2 flex justify-center">
+          <button type='submit' className="rounded bg-indigo-400 hover:bg-indigo-900 text-white w-1/2 py-2 flex justify-center">
             <span>Entrar</span>
           </button>
 
@@ -38,7 +38,7 @@ function Login() {
 
           <p>
             Ainda não tem uma conta?{' '}
-           
+
           </p>
         </form>
         <div className="fundoLogin hidden lg:block"></div>
