@@ -74,8 +74,8 @@ function Cadastro() {
         <div className="fundoCadastro hidden lg:block"></div>
         <form className='flex justify-center items-center flex-col w-2/3 gap-3' onSubmit={cadastrarNovoUsuario}>
           <h2 className='text-white text-5xl'>Cadastrar</h2>
-          <div className="flex flex-col w-full text-white">
-            <label htmlFor="nome">Nome</label>
+          <div className="flex flex-col w-full">
+            <label className='text-white' htmlFor="nome">Nome</label>
             <input
               type="text"
               id="nome"
@@ -86,8 +86,8 @@ function Cadastro() {
               onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
             />
           </div>
-          <div className="flex flex-col w-full text-white">
-            <label htmlFor="usuario">Usuario</label>
+          <div className="flex flex-col w-full">
+            <label className='text-white' htmlFor="usuario">Usuario</label>
             <input
               type="text"
               id="usuario"
@@ -98,8 +98,8 @@ function Cadastro() {
               onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
             />
           </div>
-          <div className="flex flex-col w-full text-white">
-            <label htmlFor="foto">Foto</label>
+          <div className="flex flex-col w-full">
+            <label className='text-white' htmlFor="foto">Foto</label>
             <input
               type="text"
               id="foto"
@@ -110,8 +110,8 @@ function Cadastro() {
               onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
             />
           </div>
-          <div className="flex flex-col w-full text-white">
-            <label htmlFor="senha">Senha</label>
+          <div className="flex flex-col w-full">
+            <label className='text-white' htmlFor="senha">Senha</label>
             <input
               type="password"
               id="senha"
@@ -122,8 +122,8 @@ function Cadastro() {
               onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
             />
           </div>
-          <div className="flex flex-col w-full text-white">
-            <label htmlFor="confirmarSenha">Confirmar Senha</label>
+          <div className="flex flex-col w-full">
+            <label className='text-white' htmlFor="confirmarSenha">Confirmar Senha</label>
             <input
               type="password"
               id="confirmarSenha"
