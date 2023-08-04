@@ -1,3 +1,12 @@
+# Blog Pessoal
+* Front-end
+
+<img align="center" width="500" alt="home" src="https://github.com/RitaAlmeidah/Projeto_Blog/blob/ajustesFinais/src/assets/GifCadastro.gif?raw=true">
+<img align="center" width="500" alt="home" src="https://github.com/RitaAlmeidah/Projeto_Blog/blob/ajustesFinais/src/assets/GifNavegar.gif?raw=true">
+<img align="center" width="500" alt="home" src="https://github.com/RitaAlmeidah/Projeto_Blog/blob/ajustesFinais/src/assets/GifTema_e_Postagem.gif?raw=true">
+
+
+
 # Como executar o front-end (Blog Pessoal)
 
 ### Pré-requisitos
@@ -51,8 +60,15 @@ http://localhost:5173/
 Faça o download e Importe a Collection do Insomnia: <br/>
 [Download](https://github.com/RitaAlmeidah/Projeto_Blog.git) <br/>
 Abra o Insomnia. <br/>
+
 No menu suspenso Nome do documento ou da coleção, selecione Import/Export.<br/>
 Selecione a opção Import Data > From File (Selecione o arquivo baixado).<br/>
 Explore a collection importada para fazer requisições.
+
+<br>
+<br>
+Desenvolvido por:
+<br>
+- Rita Almeida https://github.com/RitaAlmeidah
 
 
