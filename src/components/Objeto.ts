@@ -1,12 +1,12 @@
 let nome: string
 let idade: number
 
-interface ParticipanteProps{
+interface ParticipanteProps {
     nome: string
     idade: number
 }
 
 let participante: ParticipanteProps = {
-    nome:'Andreia',
-    idade:27
+    nome: 'Andreia',
+    idade: 27
 }

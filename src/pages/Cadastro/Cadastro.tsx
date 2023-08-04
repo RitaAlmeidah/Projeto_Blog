@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import Usuario from '../../models/Usuario';
 import { cadastrarUsuario } from '../../services/Service';
 import './Cadastro.css'
+import { toastAlerta } from '../../util/toastAlerta';
 
 function Cadastro() {
 
@@ -54,14 +55,14 @@ function Cadastro() {
 
       try {
         await cadastrarUsuario(`/usuarios/cadastrar`, usuario, setUsuarioResposta)
-        alert('Usuário cadastrado com sucesso')
+        toastAlerta('Usuário cadastrado com sucesso', 'sucesso')
 
       } catch (error) {
-        alert('Erro ao cadastrar o Usuário')
+        toastAlerta('Erro ao cadastrar o Usuário', 'erro')
       }
 
     } else {
-      alert('Dados inconsistentes. Verifique as informações de cadastro.')
+      toastAlerta('Dados inconsistentes. Verifique as informações de cadastro.', 'erro')
       setUsuario({ ...usuario, senha: "" }) // Reinicia o campo de Senha
       setConfirmaSenha("")                  // Reinicia o campo de Confirmar Senha
     }
@@ -81,7 +82,7 @@ function Cadastro() {
               name="nome"
               placeholder="Nome"
               className="border-2 border-violet-900 rounded p-2"
-              value={usuario.nome} 
+              value={usuario.nome}
               onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
             />
           </div>
@@ -93,7 +94,7 @@ function Cadastro() {
               name="usuario"
               placeholder="Usuario"
               className="border-2 border-violet-900 rounded p-2"
-              value={usuario.usuario} 
+              value={usuario.usuario}
               onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
             />
           </div>
@@ -105,7 +106,7 @@ function Cadastro() {
               name="foto"
               placeholder="Foto"
               className="border-2 border-violet-900 rounded p-2"
-              value={usuario.foto} 
+              value={usuario.foto}
               onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
             />
           </div>
@@ -117,7 +118,7 @@ function Cadastro() {
               name="senha"
               placeholder="Senha"
               className="border-2 border-violet-900 rounded p-2"
-              value={usuario.senha} 
+              value={usuario.senha}
               onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
             />
           </div>

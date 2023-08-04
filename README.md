@@ -1,27 +1,58 @@
-# React + TypeScript + Vite
+# Como executar o front-end (Blog Pessoal)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Pré-requisitos
 
-Currently, two official plugins are available:
+Certifique-se de que você tenha o seguinte instalado em seu sistema:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+       [Git](https://git-scm.com/downloads), [Node](https://nodejs.org/en), [Gerenciador de pacotes Yarn](), [VScode](https://code.visualstudio.com/) e [Insomnia](https://insomnia.rest/download).
+***
+## Passo 1: Clonar o Repositório
 
-## Expanding the ESLint configuration
+Abra um terminal ou prompt de comando. <br/>
+Navegue até o diretório onde você deseja clonar o repositório. <br/>
+Execute o seguinte comando para clonar o repositório:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+```
+git clone https://github.com/RitaAlmeidah/Projeto_Blog.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Aguarde até que o processo de clonagem seja concluído.
+
+***
+## Passo 2: Entrar na Pasta do Projeto
+
+Após a conclusão da clonagem, execute o seguinte comando para entrar na pasta do projeto:
+```
+cd Projeto_Blog
+```
+
+***
+## Passo 3: Instalar as Dependencias
+
+Verifique se há um arquivo chamado package.json na pasta do projeto. Esse arquivo contém as configurações e dependencias para o projeto.
+
+```
+yarn install
+```
+
+## Passo 4: Executar o Projeto
+
+Com o yarn e dependencias instalados em seu sistema, execute o seguinte comando para iniciar o projeto:
+
+```
+yarn run dev
+```
+
+http://localhost:5173/
+
+***
+## Passo 5: Requisições:
+
+Faça o download e Importe a Collection do Insomnia: <br/>
+[Download](https://github.com/RitaAlmeidah/Projeto_Blog.git) <br/>
+Abra o Insomnia. <br/>
+No menu suspenso Nome do documento ou da coleção, selecione Import/Export.<br/>
+Selecione a opção Import Data > From File (Selecione o arquivo baixado).<br/>
+Explore a collection importada para fazer requisições.
+
+

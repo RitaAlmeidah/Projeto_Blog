@@ -6,8 +6,9 @@ import ModalPostagem from '../../components/postagens/modalPostagem/ModalPostage
 
 //Construindo o NavBar
 function Home() {
+
   return (
-      <>
+    <>
       <div className="bg-gradient-to-r from-indigo-500 to-purple-500 via-cyan-500 to-blue-500">
         <div className='container grid grid-cols-2 text-white'>
           <div className="flex flex-col gap-4 items-center justify-center py-4">
@@ -16,13 +17,13 @@ function Home() {
 
             <div className="flex justify-around gap-4">
               <ModalPostagem />
-                <button className='rounded bg-gradient-to-r from-green-500 to-blue-600 hover:from-pink-500 hover:to-yellow-500 Hover me py-2 px-4'>Ver postagens</button>
+              <button className='rounded bg-gradient-to-r from-green-500 to-blue-600 hover:from-pink-500 hover:to-yellow-500 Hover me py-2 px-4'>Ver postagens</button>
             </div>
           </div>
 
           <div className="flex justify-center ">
             <img src={homeLogo} alt="" className='w-2/3' />
-    
+
           </div>
         </div>
       </div>

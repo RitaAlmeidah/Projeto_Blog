@@ -1,7 +1,7 @@
-import { createContext, ReactNode, useState } from "react"
-import UsuarioLogin from "../models/UsuarioLogin"
-import {login} from "../services/Service"
-
+import { createContext, ReactNode, useState } from "react";
+import UsuarioLogin from "../models/UsuarioLogin";
+import { login } from "../services/Service";
+import { toastAlerta } from "../util/toastAlerta";
 
 // 2ª PARTE - TIPAR O CONTEXTO
 interface AuthContextProps {
@@ -38,14 +38,14 @@ export function AuthProvider({ children }: AuthProviderProps) {
         setIsLoading(true)
 
         try {
-            
+
             await login(`/usuarios/logar`, userLogin, setUsuario)
-            alert("Usuário Logado")
+            toastAlerta('Usuário Logado', 'sucesso')
             setIsLoading(false)
 
         } catch (error) {
             console.log(error)
-            alert("Dados do usuário inconsistentes")
+            toastAlerta('Dados do usuário inconsistentes', 'erro')
             setIsLoading(false)
         }
     }
