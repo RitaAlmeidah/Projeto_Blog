@@ -1,4 +1,3 @@
-import React from 'react';
 import homeLogo from '../../assets/hello.svg';
 import './Home.css';
 import ListaPostagens from '../../components/postagens/listaPostagens/ListaPostagens';
