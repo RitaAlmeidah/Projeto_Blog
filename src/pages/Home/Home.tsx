@@ -3,8 +3,8 @@ import homeLogo from '../../assets/hello.svg';
 import './Home.css';
 import ListaPostagens from '../../components/postagens/listaPostagens/ListaPostagens';
 import ModalPostagem from '../../components/postagens/modalPostagem/ModalPostagem';
+import { Link } from 'react-router-dom';
 
-//Construindo o NavBar
 function Home() {
 
   return (
@@ -17,7 +17,7 @@ function Home() {
 
             <div className="flex justify-around gap-4">
               <ModalPostagem />
-              <button className='rounded bg-gradient-to-r from-green-500 to-blue-600 hover:from-pink-500 hover:to-yellow-500 Hover me py-2 px-4'>Ver postagens</button>
+              <Link to='/postagens' className='rounded bg-gradient-to-r from-green-500 to-blue-600 hover:from-pink-500 hover:to-yellow-500 Hover me py-2 px-4'>Ver postagens</Link>
             </div>
           </div>
 
