@@ -72,8 +72,8 @@ function Cadastro() {
     <>
       <div className="grid grid-cols-1 lg:grid-cols-2 h-screen place-items-center font-bold bg-gradient-to-r from-indigo-500 to-purple-500 via-cyan-500 to-blue-500">
         <div className="fundoCadastro hidden lg:block"></div>
-        <form className='flex justify-center items-center flex-col w-2/3 gap-3' onSubmit={cadastrarNovoUsuario}>
-          <h2 className='text-white text-5xl'>Cadastrar</h2>
+        <form className='flex justify-center items-center flex-col w-2/3 gap-3 form-container w-1/1 backdrop-opacity-20  bg-gradient-to-r from-purple-300/30 via-cyan-300/30 to-blue-300/30 rounded-lg drop-shadow-xl border-2 border-white' onSubmit={cadastrarNovoUsuario}>
+          <h2 className='text-purple-700 text-5xl'>Cadastrar</h2>
           <div className="flex flex-col w-full">
             <label className='text-white' htmlFor="nome">Nome</label>
             <input
@@ -81,7 +81,7 @@ function Cadastro() {
               id="nome"
               name="nome"
               placeholder="Nome"
-              className="border-2 border-violet-900 rounded p-2"
+              className="border-2 border-violet-700 rounded p-2"
               value={usuario.nome}
               onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
             />
@@ -93,7 +93,7 @@ function Cadastro() {
               id="usuario"
               name="usuario"
               placeholder="Usuario"
-              className="border-2 border-violet-900 rounded p-2"
+              className="border-2 border-violet-700 rounded p-2"
               value={usuario.usuario}
               onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
             />
@@ -105,7 +105,7 @@ function Cadastro() {
               id="foto"
               name="foto"
               placeholder="Foto"
-              className="border-2 border-violet-900 rounded p-2"
+              className="border-2 border-violet-700 rounded p-2"
               value={usuario.foto}
               onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
             />
@@ -117,7 +117,7 @@ function Cadastro() {
               id="senha"
               name="senha"
               placeholder="Senha"
-              className="border-2 border-violet-900 rounded p-2"
+              className="border-2 border-violet-700 rounded p-2"
               value={usuario.senha}
               onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
             />
@@ -129,7 +129,7 @@ function Cadastro() {
               id="confirmarSenha"
               name="confirmarSenha"
               placeholder="Confirmar Senha"
-              className="border-2 border-violet-900 rounded p-2"
+              className="border-2 border-violet-700 rounded p-2"
               value={confirmaSenha}
               onChange={(e: ChangeEvent<HTMLInputElement>) => handleConfirmarSenha(e)}
             />

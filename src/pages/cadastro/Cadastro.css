@@ -5,7 +5,14 @@
   min-height: 100vh;
   background-size: center;
   background-position: center;
+}
 
-
-
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  width: 60%;
+  height: 80%;
+  margin: 0 auto;
 }

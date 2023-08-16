@@ -38,8 +38,8 @@ function Login() {
   return (
     <>
       <div className="grid grid-cols-1 lg:grid-cols-2 h-screen place-items-center font-bold bg-gradient-to-r from-indigo-500 to-purple-500 via-cyan-500 to-blue-500">
-        <form className="flex justify-center items-center flex-col w-1/2 gap-4" onSubmit={login}>
-          <h2 className="text-white text-5xl ">Entrar</h2>
+        <form className="flex justify-center items-center flex-col w-1/2 gap-4 form-container h-1/2 backdrop-opacity-20 bg-gradient-to-r from-purple-300/30 via-cyan-300/30 to-blue-300/30 border-2 border-white rounded-lg drop-shadow-xl" onSubmit={login}>
+          <h2 className="text-purple-700 text-5xl ">Entrar</h2>
           <div className="flex flex-col w-full text-indigo-900">
             <label htmlFor="usuario" className="text-white">Usuário</label>
             <input
@@ -47,7 +47,7 @@ function Login() {
               id="usuario"
               name="usuario"
               placeholder="Usuario"
-              className="border-2 border-violet-900 rounded p-2"
+              className="border-2 border-violet-700 rounded p-2"
               value={usuarioLogin.usuario}
               onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
             />
@@ -59,7 +59,7 @@ function Login() {
               id="senha"
               name="senha"
               placeholder="Senha"
-              className="border-2 border-violet-900 rounded p-2"
+              className="border-2 border-violet-700 rounded p-2"
               value={usuarioLogin.senha}
               onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
             />
@@ -75,11 +75,11 @@ function Login() {
               <span>Entrar</span>}
           </button>
 
-          <hr className=" border-2 border-violet-900 rounded p-2" />
+          <hr className=" border-2 border-violet-700 rounded p-2" />
 
           <p className="text-indigo-900">
             Ainda não tem uma conta?{' '}
-            <Link to="/cadastro" className="text-indigo-200 hover:underline">
+            <Link to="/cadastro" className="text-purple-700 hover:underline">
               Cadastre-se
             </Link>
           </p>

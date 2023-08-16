@@ -56,3 +56,8 @@ Selecione a opção Import Data > From File (Selecione o arquivo baixado).<br/>
 Explore a collection importada para fazer requisições.
 
 
+***
+
+## Deploy no Vercel:
+https://projeto-blog-pessoal-sigma.vercel.app/
+
