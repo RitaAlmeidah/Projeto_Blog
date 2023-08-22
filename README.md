@@ -63,7 +63,6 @@ https://projeto-blog-pessoal-sigma.vercel.app/
 
 
 ***
-## Autora:
-
-- Rita Almeida(https://github.com/RitaAlmeidah))
+## Desenvolvido por:
+- Rita Almeida https://github.com/RitaAlmeidah
 
